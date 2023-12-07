@@ -3,6 +3,7 @@
    * Copyright 2011-2023 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+/* TODO: This needs to be in it's own template file */
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -3564,6 +3565,28 @@ textarea.form-control-lg {
   .card > .list-group + .card-footer {
     border-top: 0; }
 
+[data-bs-theme="dark"] {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: #735F32;
+  --bs-card-subtitle-color: #735F32;
+  --bs-card-border-width: 2px;
+  --bs-card-border-color: #735F32;
+  --bs-card-border-radius: var(--bs-border-radius-lg);
+  --bs-card-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: #282A3A;
+  --bs-card-cap-color: #C69749;
+  --bs-card-height: ;
+  --bs-card-color: #735F32;
+  --bs-card-bg: #111315;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  --bs-card-title-bg: #282A3A; }
+
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -3589,7 +3612,9 @@ textarea.form-control-lg {
   margin-bottom: 0;
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
-  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color); }
+  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  font-size: 1.75rem;
+  font-weight: 500; }
   .card-header:first-child {
     border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0; }
 
@@ -3597,7 +3622,8 @@ textarea.form-control-lg {
   padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
-  border-top: var(--bs-card-border-width) solid var(--bs-card-border-color); }
+  border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  margin-top: var(--bs-card-title-spacer-y); }
   .card-footer:last-child {
     border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius); }
 

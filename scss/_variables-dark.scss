@@ -1,6 +1,7 @@
 // Dark color mode variables
 //
-// Custom variables for the `[data-bs-theme="dark"]` theme. Use this as a starting point for your own custom color modes by creating a new theme-specific file like `_variables-dark.scss` and adding the variables you need.
+// Custom variables for the `[data-bs-theme="dark"]` theme.
+// Use this as a starting point for your own custom color modes by creating a new theme-specific file like `_variables-dark.scss` and adding the variables you need.
 
 //
 // Global colors
@@ -85,3 +86,27 @@ $accordion-icon-active-color-dark:  $primary-text-emphasis-dark !default;
 $accordion-button-icon-dark:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 $accordion-button-active-icon-dark:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 // scss-docs-end sass-dark-mode-vars
+
+/* TODO: This needs to be in it's own template file */
+// scss-docs-start card-variables
+$card-spacer-y-dark:                     $spacer !default;
+$card-spacer-x-dark:                     $spacer !default;
+$card-title-spacer-y-dark:               $spacer * .5 !default;
+$card-title-color-dark:                  #735F32;
+$card-title-bg-dark:                     #282A3A;
+$card-subtitle-color-dark:               #735F32;
+$card-border-width-dark:                 2px;
+$card-border-color-dark:                 #735F32;
+$card-border-radius-dark:                var(--#{$prefix}border-radius-lg) !default;
+$card-box-shadow-dark:                   $box-shadow-lg;
+$card-inner-border-radius-dark:          subtract($card-border-radius, $card-border-width) !default;
+$card-cap-padding-y-dark:                $card-spacer-y * .5 !default;
+$card-cap-padding-x-dark:                $card-spacer-x !default;
+$card-cap-bg-dark:                       #282A3A;
+$card-cap-color-dark:                    #C69749;
+$card-height-dark:                       null !default;
+$card-color-dark:                        #735F32;
+$card-bg-dark:                           #111315;
+$card-img-overlay-padding-dark:          $spacer !default;
+$card-group-margin-dark:                 $grid-gutter-width * .5 !default;
+// scss-docs-end card-variables
